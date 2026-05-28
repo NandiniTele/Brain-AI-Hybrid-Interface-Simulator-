@@ -1,0 +1,27 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Glassmorphism utility */
+.glass {
+  @apply backdrop-blur-md bg-white/10 border border-white/20 rounded-xl shadow-glow;
+}
+
+/* Neon accent pulse animation */
+@keyframes pulse-neon {
+  0% { box-shadow: 0 0 5px rgba(0,255,255,0.4); }
+  50% { box-shadow: 0 0 20px rgba(0,255,255,0.8); }
+  100% { box-shadow: 0 0 5px rgba(0,255,255,0.4); }
+}
+.neon-pulse {
+  animation: pulse-neon 3s infinite ease-in-out;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+.animate-flash {
+  animation: flash 0.066s infinite;
+}

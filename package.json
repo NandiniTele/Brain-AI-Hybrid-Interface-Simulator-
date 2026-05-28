@@ -1,0 +1,11 @@
+{
+  "name": "ai-brain-root",
+  "version": "1.0.0",
+  "description": "Root-level scripts for Brain-AI Hybrid Interface Simulator",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "frontend": "cd frontend && npm run dev",
+    "install:frontend": "cd frontend && npm install",
+    "build": "cd frontend && npm run build"
+  }
+}
